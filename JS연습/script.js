@@ -1,7 +1,10 @@
 // const hiYo = alert("안녕하세요");
 const btn = document.querySelector(".btn");
 const resultBox = document.querySelector(".outputBox");
-
+const body = document.querySelector("body");
+const darkMode = document.querySelector(".darkMode");
+const header = document.querySelector(".practice_header");
+// const label = document.querySelector("label");
 // console.log(userBirth, resultBox);
 
 btn.addEventListener("click", (e) => {
@@ -61,3 +64,24 @@ btn.addEventListener("click", (e) => {
   // }
 });
 
+darkMode.addEventListener("click", function () {
+  body.classList.toggle("darkModeOn");
+  header.classList.toggle("darkModeOnHeader");
+});
+
+const label = document.querySelector(".monthS");
+const inputBox = document.querySelector("#month");
+
+console.log(inputBox, label);
+
+// inputBox.onclick = function () {
+//   label.classList.toggle("hidden");
+// };
+
+// inputBox.addEventListener("click", () => {
+//   label.classList.toggle("hidden");
+// });
+
+inputBox.addEventListener("click", () => {
+  label.classList.remove("monthS");
+});

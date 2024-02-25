@@ -1,0 +1,133 @@
+@import url(./reset.css);
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "GyeonggiTitleM";
+}
+
+#wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  margin-top: 25px;
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+  background: crimson;
+  color: white;
+}
+
+header .practice_header {
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: 5px;
+}
+
+.section01 {
+  margin-top: 100px;
+}
+
+.section01 h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #000; */
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* transform: translateX(-50%); */
+}
+
+.inputBox #month {
+  width: 800px;
+  height: 100px;
+  border: none;
+  border-bottom: 3px solid #eee;
+  font-size: 30px;
+  text-align: center;
+  color: #aaa;
+}
+
+.inputBox #month::placeholder {
+  text-align: center;
+  font-size: 30px;
+}
+
+.inputBox #month:focus {
+  outline: none;
+  color: #aaa;
+}
+
+.inputBox .btn {
+  margin-top: 30px;
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: gold;
+  color: #000;
+}
+
+.outputBox {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  border: 3px solid #ddd;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.inputBox2 label {
+  font-size: 30px;
+  display: none;
+}
+
+.darkMode {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border-radius: 100%;
+  line-height: 80px;
+  transition: all 0.5s;
+}
+
+.darkMode:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+
+.darkMode_ON {
+  background: #555;
+  color: #fff;
+}

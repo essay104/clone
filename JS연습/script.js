@@ -100,3 +100,55 @@ console.log(inputBox, label);
 inputBox.addEventListener("click", () => {
   label.classList.remove("monthS");
 });
+
+const aClass = document.querySelector(".A_class");
+const bClass = document.querySelector(".B_class");
+const cClass = document.querySelector(".C_class");
+const scoreSubmit = document.querySelector(".score_submit");
+
+scoreSubmit.addEventListener("click", function () {
+  const score = document.querySelector(".submit_your_score").value;
+  if ((score >= 100, score >= 0)) {
+    if (score >= 80) {
+      aClass.classList.toggle("class_open");
+      bClass.classList.remove("class_open");
+      cClass.classList.remove("class_open");
+    } else if (score >= 60) {
+      bClass.classList.toggle("class_open");
+      aClass.classList.remove("class_open");
+      cClass.classList.remove("class_open");
+    } else if (score >= 0) {
+      cClass.classList.toggle("class_open");
+      aClass.classList.remove("class_open");
+      bClass.classList.remove("class_open");
+    } else {
+      const result = document.querySelector(".result_box");
+      result.innerHTML = "다시 입력해 주세요";
+    }
+  }
+});
+
+const good = document.querySelector(".true");
+const bad = document.querySelector(".false");
+
+good.addEventListener("click", () => {
+  const QzResult = document.querySelector(".QzResult");
+  QzResult.innerHTML = "정답입니다!!!";
+});
+bad.addEventListener("click", () => {
+  const QzResult = document.querySelector(".QzResult");
+  QzResult.innerHTML = "오답입니다!!!";
+});
+
+//삼항조건연산자
+
+const chosenQz = document.querySelector(".Qz_button");
+const chosenYear = document.querySelector(".chosen");
+
+chosenQz.addEventListener("click", () => {
+  const chosenYear = document.querySelector(".chosen").value;
+  const chosenResult = (chosenYear = 1392 ? "정답입니다" : "오답입니다");
+  const qz2Result = document.querySelector(".Qz2Result");
+  qz2Result.innerHTML = chosenResult;
+  console.log(chosenResult);
+});

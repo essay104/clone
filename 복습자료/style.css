@@ -65,3 +65,23 @@
   cursor: pointer;
   color: #000;
 }
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#study {
+  margin-top: 50px;
+  padding: 18px 0px;
+  width: 800px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #eee;
+  color: #aaa;
+  text-align: center;
+}

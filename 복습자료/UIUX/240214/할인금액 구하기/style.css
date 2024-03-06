@@ -1,0 +1,55 @@
+@import url(./reset.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://www.wesang.com/public/upload/2101/fe91bea7b326c227eb63555c8a668683_1610944308_9751.jpg)
+    center/cover no-repeat;
+}
+
+form {
+  background: #eee;
+  border-radius: 20px;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  padding-top: 40px;
+}
+li {
+  margin-bottom: 10px;
+}
+li > label {
+  display: inline-block;
+  width: 100px;
+}
+li > input[type="text"] {
+  border: none;
+  background: #eee;
+  border-bottom: 1px solid #000;
+}
+li > input[type="text"]:focus {
+  outline: none;
+}
+li > input[type="submit"] {
+  margin: 20px 40px;
+  padding: 10px 40px;
+}
+#showResult {
+  font-size: 18px;
+  margin-top: 40px;
+}

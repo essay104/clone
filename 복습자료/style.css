@@ -71,6 +71,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 #study {
@@ -79,9 +80,26 @@ form {
   width: 800px;
   padding-left: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   font-size: 18px;
   background: #eee;
   color: #aaa;
   text-align: center;
+  outline: none;
+}
+
+.move {
+  border: none;
+  width: 30px;
+  height: 58px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 65.5%;
+  line-height: 58px;
+  transition: all 0.5s;
+}
+
+.move:hover {
+  background: #000;
+  color: #fff;
 }

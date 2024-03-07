@@ -1,9 +1,6 @@
-const menu = document.querySelector("#study");
-const btn = document.querySelector(".move");
-const option = document.querySelectorAll("option");
+const select = document.querySelector("#study");
 
-movingPage = () => {
-  window.location.href("index2.html");
-};
-
-btn.addEventListener("click", movingPage);
+select.addEventListener("change", () => {
+  const option = document.querySelectorAll("option".values);
+  window.location.href = option;
+});

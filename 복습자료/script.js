@@ -1,9 +1,13 @@
-const menu = document.querySelector("#study");
-const btn = document.querySelector(".move");
-const option = document.querySelectorAll("option");
+// const select = document.querySelector("#study");
 
-movingPage = () => {
-  window.location.href("index2.html");
-};
+// select.addEventListener("change", () => {
+//   const option = document.querySelectorAll("option".values);
+//   window.location.href = option;
+// });
 
-btn.addEventListener("click", movingPage);
+const select = document.querySelector("#study");
+
+select.addEventListener("change", () => {
+  const selectedOption = select.value;
+  window.location.href = selectedOption;
+});

@@ -22,8 +22,8 @@ const time = () => {
   } else if (hrs >= 10 && hrs < 18) {
     title.textContent = "Good Afternoon!!";
   } else {
-    title.textContent = "Good night!!";
+    title.textContent = "Good Night!!";
   }
 };
 
-title.textContent = time();
+setInterval(time(), 1000 * 60 * 60);

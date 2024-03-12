@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  overflow: hidden;
+}
+
+.bgimg {
+  width: inherit;
+  height: inherit;
+  background: url(./img/kuk202312040127.jpg) center/contain no-repeat;
+}
+
+.bottom {
+  position: relative;
+}
+
+.characters {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.character {
+  margin-top: 100px;
+  overflow: hidden;
+  transform: translateY(300%);
+  transition: all 1s;
+}
+
+.character > p:last-child {
+  font-size: 50px;
+}
+
+.active {
+  transform: translateY(0%);
+}

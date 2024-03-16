@@ -44,3 +44,7 @@ span {
   font: italic 50px/5rem "arial";
   text-align: center;
 }
+
+.none {
+  display: none;
+}

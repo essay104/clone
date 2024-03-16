@@ -1,6 +1,23 @@
-const today = new Date(); //예약어 new로 Date라는 객체를 생성
-const hrs = today.getHours(); //getHours(매서드)는 시간을 가져옴
+const save = document.querySelector("form");
+const bookList = document.querySelector("#bookList");
 
-const content = document.querySelector(".img");
+save.addEventListener("submit", (e) => {
+  const title = document.querySelector("#title");
+  const author = document.querySelector("#author");
+  e.preventDefault();
+  const li = document.createElement("li");
+  li.innerHTML = `
+  ${title.value} - ${author.value}
+  <span>삭제</span>
+  `;
+  bookList.appendChild(li);
+  title.value = "";
+  author.value = "";
 
-content.style.background = "#000";
+  const delButtons = document.querySelectorAll("span");
+  for (let delButton of delButtons) {
+    delButton.addEventListener("click", function () {
+      this.parentNode.parentNode.removeChild(this.parentNode);
+    });
+  }
+});

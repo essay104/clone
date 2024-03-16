@@ -8,8 +8,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="img">
-      <h1></h1>
+    <div id="container">
+      <h1>book List</h1>
+      <form action="textForm" action="https://localhost:3000" method="post">
+        <ul id="bookinfo">
+          <li>
+            <label for="title">제 목</label>
+            <input type="text" id="title" />
+          </li>
+          <li>
+            <label for="author">저 자</label>
+            <input type="text" id="author" />
+          </li>
+        </ul>
+        <div class="buttons">
+          <input class="btn" type="reset" value="취소하기" />
+          <input class="btn" type="submit" value="저장하기" />
+        </div>
+      </form>
+      <ul id="bookList"></ul>
     </div>
   </body>
 </html>

@@ -1,0 +1,260 @@
+@import url(./reset.css);
+@import url(./font.css);
+
+/* header */
+
+#headerBar {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  background: #0e0f37;
+  opacity: 0;
+  transition: all 0.5s;
+  display: none;
+}
+
+#headerBar:hover {
+  opacity: 1;
+}
+
+.header-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+  color: #fff;
+  font-family: Hahmlet;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.logo .header-logo {
+  width: 50px;
+  height: 50px;
+  background: url(./imgs/logo2.jpg) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.nav .menu {
+  color: #fff;
+  display: flex;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.menu li {
+  padding: 5px 20px;
+  transition: all 0.5s;
+}
+
+.menu li:hover {
+  background: #fff;
+  color: #0e0f37;
+}
+
+#home {
+  display: flex;
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(./imgs/home_banner.jpg) center/cover no-repeat;
+}
+#header {
+  width: 30%;
+  height: 100vh;
+  background: #0e0f37;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 20px;
+  text-align: center;
+  font-family: Hahmlet;
+}
+
+#header b {
+  color: gold;
+}
+
+.headerP {
+  display: flex;
+  color: white;
+}
+
+.headerP span {
+  color: crimson;
+}
+
+.home-contents {
+  width: 70%;
+  height: 100vh;
+}
+
+.header_popup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.header_popup i {
+  font-size: 1rem;
+}
+
+.header_popup p {
+  font-size: 1rem;
+}
+
+.home-contents {
+  position: relative;
+}
+
+#date {
+  font-size: 1.5rem;
+}
+
+.scrollButton {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #fff;
+  animation: 1s infinite alternate arrow;
+  cursor: pointer;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* section01 */
+
+.section01 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(./imgs/challengers2.webp) center/cover no-repeat;
+}
+
+#contentFrame {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.btns {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 150px;
+  height: 500px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .manBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/citylogo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btns .liverBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/liverpool\ logo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btns .arsenalBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/arsenal\ logo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: none;
+  border: none;
+  transition: all 0.5s;
+  opacity: 0.3;
+}
+
+.btn:hover::before {
+  display: block;
+  animation: 1s linear logo;
+}
+
+@keyframes logo {
+  0% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+.section01Txt {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  text-align: right;
+  font-family: "Hahmlet";
+}
+
+.section01 h1 {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  font-family: sans-serif;
+  top: 10%;
+  left: 5%;
+  transform: translateX(-10%);
+}

@@ -1,0 +1,103 @@
+@import url(./reset.css);
+@import url(./font.css);
+
+.section01 {
+  width: 100%;
+  height: 100vh;
+}
+
+.section01Content {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(./imgs/Liverpool.webp) center/cover no-repeat;
+}
+
+.btns {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 150px;
+  height: 500px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .manBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/citylogo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btns .liverBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/liverpool\ logo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btns .arsenalBtn {
+  width: 100px;
+  height: 100px;
+  background: url(./imgs/arsenal\ logo.png) center/cover no-repeat;
+  border-radius: 100%;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: none;
+  border: none;
+  transition: all 0.5s;
+  opacity: 0.3;
+}
+
+.btn:hover::before {
+  display: block;
+  animation: 1s linear logo;
+}
+
+@keyframes logo {
+  0% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+.section01Txt {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  text-align: right;
+  font-family: "Hahmlet";
+}

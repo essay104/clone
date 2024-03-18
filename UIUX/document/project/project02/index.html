@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="mainside">
+        <h1>(교육용) 우리나라의 시/도</h1>
+        <form
+          name="education"
+          action="https://localhost:3000/map.js"
+          method="post"
+        >
+          <input type="text" placeholder="우리나라의 지명을 입력하세요" />
+          <input type="submit" value="시/도" />
+        </form>
+        <div id="result">
+          <div class="char"></div>
+        </div>
+      </div>
+      <div id="mapside">
+        <div id="canvanboard">
+          <img src="./img/m_map_city.png" alt="01" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#mainside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  background: #79ed;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+input {
+  padding: 0.5rem 3rem;
+}
+
+input[type="text"] {
+  width: 400px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #eee;
+}
+
+input[type="submit"] {
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #eee;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#result {
+  width: 80%;
+  height: 60%;
+  border: 1px solid #eee;
+  background: #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.char {
+  background: url(./img/pororo.png) center/cover no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  filter: brightness(0.8);
+}
+
+#mapside {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
